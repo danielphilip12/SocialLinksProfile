@@ -4,12 +4,13 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background-color: hsl(0, 0%, 8%)
 }
 
 #location {
     color: hsl(75, 94%, 57%);
+    font-weight: 700;
 }
 
 .image {
@@ -19,7 +20,7 @@ body {
 }
 
 .card {
-    margin: 15% auto;
+    margin: 10% auto;
     width: 20%;
     background-color: hsl(0, 0%, 12%);
     display: flex;
@@ -27,6 +28,7 @@ body {
     align-items: center;
     padding: 20px 10px;
     border-radius: 10px;
+    min-width: 300px;
 }
 
 p, li {
@@ -42,8 +44,23 @@ li {
     border-radius: 10px;
 }
 
+li:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: black;
+    cursor: pointer;
+}
+
 ul {
     display: flex;
     flex-direction: column;
     list-style: none;
+}
+
+#quote {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#name {
+    font-size: 30px;
 }
